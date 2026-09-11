@@ -11,8 +11,13 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
 
+    "noEmit": true,
+
     "sourceMap": false,
-    "declaration": false
+    "declaration": false,
+    "allowImportingTsExtensions": true,
+
+    "types": ["node"]
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"]
