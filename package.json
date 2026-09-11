@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --import tsx --test src/tests/*.test.ts",
+    "start": "tsx src/server.ts"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^26.5.0",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.5.1",
+    "express": "^5.2.1",
+    "npm": "^12.0.2",
     "tsx": "^4.23.13",
     "typescript": "^7.0.2"
   }
