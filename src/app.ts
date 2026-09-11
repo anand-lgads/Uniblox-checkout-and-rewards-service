@@ -34,6 +34,13 @@ export function createApp(deps: {
     // Parse JSON request bodies
     app.use(express.json());
 
+    app.use((req, _res, next) => {
+        if (req.body === undefined) {
+            req.body = {};
+        }
+        next();
+    });
+
     // --------------------------------------------------
     // Products
     // --------------------------------------------------
